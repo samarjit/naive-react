@@ -1,0 +1,50 @@
+Arguments: 
+  c:\softwares\nodejs\node.exe c:\softwares\nodejs\npm-cmd\node_modules\yarn\bin\yarn.js add browserify
+
+PATH: 
+  C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\softwares\TortoiseGit\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\softwares\PortableGit\cmd;C:\softwares\PortableGit\mingw64\bin;C:\softwares\PortableGit\usr\bin;C:\softwares\jdk1.8.0_152\bin;c:\softwares\nodejs;c:\softwares\nodejs\npm-cmd;C:\softwares\apache-maven-3.5.2\bin;c:\softwares\SikSvn\bin;C:\softwares\ffmpeg\bin;C:\softwares\Kubernetes\Minikube;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\1E\NomadBranch\;C:\softwares\TortoiseSVN\bin;C:\Program Files (x86)\WebEx\Productivity Tools;C:\Program Files\Git\cmd;C:\softwares\Vagrant\bin;C:\softwares\PortableGit\cmd;C:\softwares\PortableGit\mingw64\bin;C:\softwares\PortableGit\usr\bin;C:\softwares\jdk1.8.0_152\bin;c:\softwares\nodejs;c:\softwares\nodejs\npm-cmd;C:\softwares\apache-maven-3.5.2\bin;c:\softwares\SikSvn\bin;C:\softwares\ffmpeg\bin;C:\Python3;C:\Python3\Scripts;C:\softwares\Kubernetes\Minikube;C:\softwares\Vagrant\bin;C:\softwares\VSCode;C:\softwares\groovy-2.5.2\bin;;C:\softwares\DockerToolbox
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.11.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescript: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND one.proxy.att.com one.proxy.att.com:8080
+      at ClientRequest.onError (c:\softwares\nodejs\npm-cmd\node_modules\yarn\lib\cli.js:140883:17)
+      at Object.onceWrapper (events.js:315:30)
+      at emitOne (events.js:116:13)
+      at ClientRequest.emit (events.js:211:7)
+      at Socket.socketErrorListener (_http_client.js:387:9)
+      at emitOne (events.js:116:13)
+      at Socket.emit (events.js:211:7)
+      at emitErrorNT (internal/streams/destroy.js:64:8)
+      at _combinedTickCallback (internal/process/next_tick.js:138:11)
+      at process._tickCallback (internal/process/next_tick.js:180:9)
+
+npm manifest: 
+  {
+    "name": "dummy_react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "tsc",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "typescript": "^3.3.3333"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
