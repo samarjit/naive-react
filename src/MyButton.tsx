@@ -1,4 +1,4 @@
-import React from './DummyReact';
+import React from './NaiveReact';
 
 export default class MyButton {
     state: any;
@@ -7,8 +7,9 @@ export default class MyButton {
         this.clickHandler = this.clickHandler.bind(this);
     }
     clickHandler() {
-        console.log('Button clicked');
+        console.log('Button clicked!');
         this.state.count += 1; 
+        React.forceRender(this);
     };
     render() {
         return (<div>

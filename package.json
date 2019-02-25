@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "browserify": "browserify build/app.js -o build/bundle.js  && cp src/index.html build/index.html",
-    "build": "rm -rf build/* && tsc && yarn browserify",
+    "browserify": "browserify build/app.js -o build/bundle.js",
+    "watchify": "watchify build/app.js -o build/bundle.js",
+    "build": "rm -rf build/* && cp src/index.html build/index.html && concurrently \"tsc -w\" \"yarn watchify\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browserify": "^16.2.3",
-    "typescript": "^3.3.3333"
+    "concurrently": "^4.1.0",
+    "typescript": "^3.3.3333",
+    "watchify": "^3.11.1"
   }
 }

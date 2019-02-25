@@ -1,9 +1,9 @@
-import React from './DummyReact';
+import React from './NaiveReact';
 import MyButton from './MyButton';
 
 class App {
     render(): any {
-        return (<div>Hello <MyButton/></div>);
+        return (<div>Hello <MyButton/><MyButton/></div>);
     }
 }
 
