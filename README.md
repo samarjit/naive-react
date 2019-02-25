@@ -1,3 +1,12 @@
+## Lets build a naive react
+    Given that TypeScript natively supports jsx now. It is also possible to compile jsx with babel without React js. The output javascript contains `React.createElement()`. 
+    In this project, I am trying to implement this createElement() to render dom tree. Initial render is quite simple. But it gets complicated to handle rerender where children nodes need to be tracked and replaced. This was achieved in stage 2.
+    To run the project. 
+    1) `npm install`
+    2) `npm run build`   -- This will compile all jsx and concatenate using browserify in the dist folder.
+    3) Open the index.html from dist folder in a browser. Alternatively run `http-server` to serve static files from dist directory
+
+    * Note: This is a work in progress *
 ### Stage 1
     We have a simple render logic that traverses the nodes through render functions and generates dom. It is simple template rendering.
 #### There is no way to rerender subtrees.

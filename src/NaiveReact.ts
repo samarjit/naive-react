@@ -42,7 +42,7 @@ export default class NaiveReact{
         }
 
         //append ref
-        NaiveReact.appendRef(inst, elm);
+        NaiveReact.appendRef(inst, elm, null);
         
 
         if(attrs) {

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "browserify": "browserify build/app.js -o build/bundle.js",
-    "watchify": "watchify build/app.js -o build/bundle.js",
-    "build": "rm -rf build/* && cp src/index.html build/index.html && concurrently \"tsc -w\" \"yarn watchify\"",
+    "browserify": "browserify dist/app.js -o dist/bundle.js",
+    "watchify": "watchify dist/app.js -o dist/bundle.js",
+    "build": "rm -rf dist/* && cp src/index.html dist/index.html && concurrently \"tsc -w\" \"yarn watchify\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
